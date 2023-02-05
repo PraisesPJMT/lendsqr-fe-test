@@ -1,11 +1,8 @@
 import './App.scss';
+import Login from './pages/login-page/Login';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Lendsqr app</h1>
-    </div>
-  );
+  return <Login />;
 }
 
 export default App;

@@ -1,0 +1,23 @@
+.login-section {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: calc(0.15 * 100vh);
+
+    .logo {
+      margin-top: calc(0.12 * 100vh);
+      margin-left: 10%;
+      margin-right: auto;
+      width: 24%;
+    }
+
+    .login-image {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
