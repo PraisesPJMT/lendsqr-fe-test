@@ -1,0 +1,107 @@
+@import '../../index.scss';
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 14%;
+  font-family: $font-avenir;
+  color: $light-blue-color;
+
+  h1 {
+    color: $blue-color;
+    font-family: $font-avenir-bold;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: 10px;
+  }
+
+  > p {
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+
+  .input-field {
+    width: 100%;
+    position: relative;
+    margin: 12px 0;
+  }
+
+  .input-field > button {
+    color: $green-color;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: calc(0.5rem + 2px);
+    right: calc(0.6rem + 10% + 2px);
+    cursor: pointer;
+  }
+
+  .input-field > button:hover {
+    opacity: 0.7;
+  }
+
+  input {
+    width: 90%;
+    font-size: 14px;
+    padding: 0.5rem;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    color: $light-blue-color;
+  }
+
+  input:focus {
+    outline: 2px solid $blue-color;
+  }
+
+  input::placeholder {
+    opacity: 0.6;
+  }
+
+  input[type='password']::-ms-reveal {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $green-color;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  > button {
+    @include primary-btn;
+    margin-top: 2rem;
+    margin-bottom: auto;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  > button:hover {
+    background-color: lighten($green-color, $amount: 20%);
+  }
+
+  .error {
+    width: 90%;
+    padding: 0.2rem 0.5rem;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid $red-color;
+    border-radius: 8px;
+    color: $red-color;
+    background-color: lighten($red-color, $amount: 38%);
+  }
+}
